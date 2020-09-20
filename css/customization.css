@@ -1,0 +1,477 @@
+#customization-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/customization/customization-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.customization-title {
+    flex: 1;
+    padding: 8rem 0 5rem;
+}
+
+.customization-title h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+}
+
+.customization-top-body {
+    width: 90%;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: -5rem;
+    display: flex;
+}
+
+.customization-t-box {
+    flex: 1;
+    margin: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customization-t-box img {
+    width: 80%;
+    max-width: 80px;
+    height: auto;
+}
+
+.customization-t-text {
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.customization-t-text h3 {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.customization-t-text h3 span {
+    display: block;
+    font-weight: 900;
+}
+
+.customization-togo {
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.customization-togo i {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+.customization-togo i:first-child {
+    font-size: 1rem;
+}
+.customization-togo i:nth-child(2) {
+    font-size: 1.5rem;
+    margin: -0.5rem 0 0 0;
+}
+.customization-togo i:nth-child(3) {
+    font-size: 1.8rem;
+    margin: -0.8rem 0 0 0;
+}
+
+.customization-togo:hover i:first-child {
+    color: rgba(73, 10, 41, 0.5);
+}
+.customization-togo:hover i:nth-child(2) {
+    color: rgba(73, 10, 41, 0.8);
+}
+.customization-togo:hover i:nth-child(3) {
+    color: rgba(73, 10, 41, 1);
+}
+
+#customization-topbottom {
+    width: 100%;
+    display: flex;
+    padding-top: 5rem;
+    background-color: #f9f9f9;
+}
+
+.customization-tb-inner {
+    width: 94%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.customization-tb-inner h1 {
+    font-size: 2.8rem;
+    color: #000000;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+.customization-tb-inner h3 {
+    font-size: 1.8rem;
+    color: #333333;
+    font-weight: 300;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+}
+
+.customization-tb-boxes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.customization-tb-box {
+    flex: 1;
+    min-width: 120px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customization-tb-box img {
+    width: 80%;
+    max-width: 60px;
+    height: auto;
+}
+
+.customization-tb-text {
+    flex: 1;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.customization-tb-text p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.2;
+}
+
+.customization-tb-text p span {
+    color: #000000;
+    display: block;
+    font-weight: 400;   
+}
+
+.customization-section {
+    display: flex;
+}
+
+.cu-s-img {
+    flex: 1;
+    position: relative;
+    background: #2a101d;
+}
+.cu-s-img-1 {
+    background: url(../images/customization/cms-bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.cu-s-img-2 {
+    background: linear-gradient(rgba(42, 16, 29,0.5), rgba(42, 16, 29,0.8)), url(../images/customization/cms-bg.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#plugin-creation > .cu-s-img {
+    order: 2;
+}
+
+.cu-s-title {
+    position: absolute;
+    top: 50%;
+    right: -6rem;
+    transform: translateY(-50%) rotate(-90deg);
+    padding: 3rem 1.5rem;
+}
+
+
+#plugin-creation > .cu-s-img > .cu-s-title {
+    right: unset;
+    transform: translateY(-50%) rotate(90deg);
+    left: -2rem;
+}
+
+.cu-s-title h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: right;
+}
+
+.cu-s-title h1 span {
+    font-size: 2.6rem;
+    color: #ffffff;
+    font-weight: 900;
+    display: block;
+}
+
+.cu-s-content {
+    flex: 2;
+    padding: 10rem 0 10rem 2rem;
+}
+
+#plugin-creation > .cu-s-content {
+    padding: 10rem 2rem 10rem 0;
+    background: #f3f3f3;
+}
+
+.cu-s-content-inner {
+    max-width: 700px;
+}
+
+#plugin-creation > .cu-s-content > .cu-s-content-inner {
+    float: right;
+}
+
+.cu-s-text {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.cu-s-text h2 {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 300;
+    margin: 0 0 1rem 0;
+}
+
+.cu-s-text p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 300;
+    margin: 1rem 0;
+
+}
+
+.cu-s-text ul {
+    margin: 1rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cu-s-text ul li {
+    color: #000000;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1;
+    margin: 1rem 0;
+}
+
+.cu-s-text ul li i {
+    width: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    color: #2a101d;
+}
+
+@media (max-width: 1024px) {
+
+    .customization-title h1 {
+        font-size: 4rem;
+    }
+
+    .customization-tb-inner h1 {
+        font-size: 2rem;
+    }
+    .customization-tb-inner h3 {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .customization-tb-box {
+        flex: 1 0 calc(33% - 2rem);
+        margin: 1.5rem 1rem;
+    }
+
+    .customization-section {
+        flex-direction: column;
+    }
+
+    .cu-s-img {
+        padding: 15rem 0;
+    }
+
+    .cu-s-title {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        padding: 0;
+        right: unset;
+    }
+    #plugin-creation > .cu-s-img > .cu-s-title {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        padding: 0;
+    }
+    #plugin-creation > .cu-s-img > .cu-s-title h1 {
+        text-align: left;
+    }
+    
+    #plugin-creation > .cu-s-img {
+        order: 0;
+    }
+
+    .cu-s-content {
+        padding: 5rem 0 5rem 0;
+        margin: 0 auto;
+        margin-top: -8rem;
+        position: relative;
+        background: #ffffff;
+        width: 90%;
+    }
+    #plugin-creation > .cu-s-content {
+        padding: 5rem 0 5rem 0;
+        background: #ffffff;
+    }
+
+}
+
+@media (max-width: 667px) {
+
+    .customization-title h1 {
+        font-size: 3rem;
+    }
+
+    .customization-t-box {
+        margin: 3rem 1.5rem;
+    }
+
+    .customization-t-box img {
+        width: 80%;
+        max-width: 60px;
+        height: auto;
+    }
+
+    .cu-s-title h1 {
+        font-size: 2.6rem;
+    }
+    .cu-s-title h1 span {
+        font-size: 2.4rem;
+    }
+
+    .cu-s-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .customization-tb-inner h1 {
+        font-size: 1.8rem;
+    }
+    .customization-tb-inner h3 {
+        font-size: 1.4rem;
+    }
+
+    
+    .customization-tb-box {
+        flex: 1 0 33%;
+        margin: 1.5rem 0;
+    }
+
+
+
+}
+
+@media (max-width: 450px) {
+
+    .customization-top-body {
+        flex-direction: column;
+        padding: 2rem 0 0 0;
+    }
+
+    .customization-t-box {
+        margin: 0 1rem 2rem 1rem;
+    }
+    .customization-t-text h3 span {
+        display: inline-block;
+    }
+    .customization-t-text {
+        margin: 1rem 0 0.5rem 0;
+    }
+    .customization-title h1 {
+        font-size: 2.8rem;
+    }
+
+    .customization-tb-box {
+        flex: 1 0 50%;
+        margin: 1rem 0;
+    }
+    .customization-tb-text {
+        margin-top: 0.5rem;
+    }
+
+    .customization-tb-inner h1 {
+        font-size: 1.6rem;
+    }
+    .customization-tb-inner h3 {
+        font-size: 1.2rem;
+        margin: 1.5rem 0 0 0;
+    }
+
+    .cu-s-img {
+        padding: 10rem 0;
+    }
+
+    .cu-s-title h1 {
+        font-size: 2.2rem;
+    }
+    .cu-s-title h1 span {
+        font-size: 2.2rem;
+    }
+
+    .cu-s-content {
+        padding: 3rem 0 5rem 0;
+        margin-top: -5rem;
+    }
+    #plugin-creation > .cu-s-content {
+        padding: 3rem 0 5rem 0;
+        margin-top: -5rem;
+    }
+
+    .cu-s-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .cu-s-text h2 {
+        padding: 0 2rem;
+        font-size: 1.6rem;
+    }
+    .cu-s-text p {
+        font-size: 1rem;
+    }
+
+
+
+}
+
+

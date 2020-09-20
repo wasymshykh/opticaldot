@@ -1,0 +1,358 @@
+.header-inner {
+    max-width: 1100px;
+}
+
+#page-loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(255,255,255,1);
+    z-index: 101;
+    overflow: hidden;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#page-loader img {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    transform: rotate(180deg);
+    animation: 1s rotatorAnimation infinite;
+}
+
+@keyframes rotatorAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+    
+}
+
+
+@keyframes fade-out-bck {
+0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+}
+100% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+}
+}
+
+
+/* 
+
+    FOOTER OVERRIDE
+
+*/
+
+#nonFullPage #footer {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow-x: hidden;
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), url(../images/footerbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#nonFullPage #footer .footer-top {
+    width: 94%;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    background: none;
+    z-index: 1;
+}
+
+.footer-qoute {
+    width: 50%;
+    height: auto;
+    flex-basis: 50%;
+    padding: 5vh 0;
+}
+
+.footer-qoute h1 {
+    font-size: 2.2rem;
+    margin: 0em 0 0.5em 0;
+}
+.footer-qoute p {
+    font-size: 1rem;
+}
+.footer-qoute h3 {
+    font-size: 1.8rem;
+}
+.footer-qoute ul li {
+    font-size: 1rem;
+    color: #212121;
+    font-weight: 300;
+    line-height: 1.5em;
+    position: relative;
+    padding-left: 2rem;
+    margin: 1rem 0;
+}
+.footer-qoute ul li span {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 60% 60%;
+}
+
+.footer-contact {
+    flex: 1;
+    width: 50%;
+    height: auto;
+    right: 0;
+    top: unset;
+    top: 10%;
+}
+
+.footer-contact .input-row:not(:last-child) {
+    margin: 25px auto;
+}
+.footer-contact .input-row {
+    margin: 25px auto;
+}
+
+.footer-contact .input-row .input-field input,
+.footer-contact .input-row .input-field input:focus {
+    height: 40px;
+    font-size: 1rem;
+}
+
+.footer-contact .input-row input[type="submit"],
+.footer-contact .input-row .select-wrapper input.select-dropdown,
+.footer-contact .input-row .input-field .select-dropdown li.optgroup > span {
+    font-size: 1rem;
+}
+
+.footer-contact .input-row .input-field [type="checkbox"] + span:not(.lever) {
+    font-size: 1rem;
+    padding-left: 2em;
+    height: 1.2em;
+    line-height: 1.2em;
+}
+
+.footer-contact .input-row .input-field [type="checkbox"] + span:not(.lever)::before {
+    width: 1em;
+    height: 1em;
+    margin-top: 0px;
+}
+
+.footer-contact .input-row .input-field label {
+    font-size: 1rem;
+}
+.footer-contact .input-row .input-field textarea.materialize-textarea{
+    font-size: 1rem;
+    height: 10rem !important;
+}
+.footer-contact .input-row .input-field .cat-small {
+    font-size: 1rem;
+    transform: scale(0.7);
+}
+.input-field > label:not(.label-icon).active {
+    transform: translateY(-14px) scale(0.7);
+}
+
+.footer-bottom {
+    width: 94%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer-industries {
+    flex-basis: 60%;
+    width: 60%;
+    height: auto;
+    padding: 80px 0;
+    float: none;
+}
+
+.footer-bottom::before{
+    content:"";
+    left:-200%;
+    top:0;
+    width: 200%;
+    height: 100%;
+    background: #000000;
+    position: absolute;
+}
+.footer-bottom::after{
+    content:"";
+    right:-200%;
+    top:0;
+    width: 200%;
+    height: 100%;
+    background: #000000;
+    position: absolute;
+    z-index: 0;
+}
+
+.footer-industries h1 {
+    font-size: 2.2rem;
+    margin: 0 0 1em 0;
+}
+
+.footer-industries ul li {
+    font-size: 1rem;
+    padding-left: 2em;
+    padding-right: 1em;
+    margin: 0.5em 0;
+}
+
+.footer-industries ul li span {
+    width: 1em;
+    height: 1em;
+}
+
+.footer-logo {
+    float: none;
+    width: 40%;
+    max-width: 360px;
+    flex-basis: 40%;
+    height: auto;
+    margin-top: 100px;
+    margin-right: 0;
+    position: relative;
+}
+.footer-logo img {
+    padding: 1rem 2rem;
+}
+.footer-logo p {
+    font-size: 1.1rem;
+    line-height: 1.5em;
+}
+
+
+
+@media (max-width: 1024px){
+
+    .footer-qoute h1 {
+        font-size: 2rem;
+    }
+    .footer-industries h1 {
+        font-size: 2rem;
+    }
+    .footer-qoute p {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media (max-width: 750px){
+
+    #nonFullPage #footer .footer-top {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        flex-direction: column;
+    }
+
+    #nonFullPage #footer .footer-bottom {
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+    .footer-qoute {
+        width: 100%;
+        flex-basis: 100%;
+        padding: 5vh 0;
+    }
+
+    .footer-contact {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .footer-contact .input-row:first-child {
+        display: inline-block;
+        width: 40%;
+        margin-left: 5%;
+        margin-bottom: 0;
+    }
+    .footer-contact .input-row:nth-child(2) {
+        display: inline-block;
+        width: 45%;
+        margin-left: 5%;
+        margin-bottom: 0;
+    }
+    .footer-contact .input-row {
+        width: 90%;
+    }
+
+    .footer-qoute ul li {
+        padding-right: 1rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    
+    .footer-industries ul {
+        justify-content: space-around;
+    }
+    .footer-industries {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .footer-logo {
+        float: none;
+        width: auto;
+        max-width: auto;
+        flex-basis: auto;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 0 50px 0;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .footer-qoute ul li {
+        font-size: 0.9rem;
+        padding-right: 0.5rem;
+        padding-left: 1.7rem;
+    }
+
+    .footer-qoute ul li span {
+        width: 1.4rem;
+        height: 1.4rem;
+        background-size: 60% 60%;
+    }
+
+    .footer-industries ul li {
+        flex: 50%;
+        font-size: 0.9rem;
+        padding-left: 1.3em;
+        padding-right: 1em;
+        margin: 0.5em 0;
+    }
+
+    .footer-industries h1 {
+        font-size: 2rem;
+        margin: 0 0 0.5em 0;
+    }
+
+}

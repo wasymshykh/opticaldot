@@ -1,0 +1,223 @@
+#optimization {
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url(../images/optimization/optimization-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.optimization-inner {
+    display: flex;
+    min-height: 700px;
+    height: 80vh;
+    max-height: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+.optimization-text {
+    width: 90%;
+    max-width: 600px;
+    padding: 10rem 0;
+
+}
+
+.optimization-text h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.optimization-text p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 1rem 0 2rem 0;
+}
+
+.optimization-btn {
+    display: block;
+}
+
+.optimization-btn button {
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #490a29;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1em 1em 1em 2em;
+    cursor: pointer;
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+}
+
+.optimization-btn button i {
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+/* Services */
+
+#optimization-services {
+    width: 100%;
+    display: block;
+    background-color: #f3f3f3;
+}
+
+.opti-s-inner {
+    width: 94%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+.opti-s-boxes {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5rem;
+}
+
+
+.opti-s-box {
+    background: #ffffff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.opti-s-box:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    flex-direction: row-reverse;
+}
+
+.opti-s-box img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+}
+
+.opti-s-box:last-child img {
+    max-width: 286px;
+}
+
+.opti-s-box-text {
+    width: 100%;
+    display: block;
+    padding: 3rem 0 0 0;
+}
+
+.opti-s-box-text h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+    color: #000000;
+    text-align: center;
+}
+
+.opti-s-box-text h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 0;
+    color: #333333;
+    text-align: center;
+}
+
+.opti-s-box-text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    color: #000000;
+    text-align: center;
+}
+
+
+.opti-s-box-text h5 {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 2rem 0 1rem 0;
+    color: #fff;
+    background-color: #490a29;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+.opti-s-box-text ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opti-s-box-text ul li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    padding: 0 1.5rem;
+    color: #000000;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+
+    .opti-s-boxes {
+        grid-template-columns: 100%;
+    }
+    .opti-s-box:last-child {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .opti-s-box img {
+        max-width: 300px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .optimization-text h1 {
+        font-size: 3rem;
+    }
+    .optimization-text p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: #ffffff;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .opti-s-box:last-child {
+        flex-direction: column;
+    }
+    .opti-s-box:last-child img {
+        max-width: 240px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .opti-s-inner {
+        padding: 6rem 0;
+    }
+
+    .opti-s-box-text h1 {
+        font-size: 1.6rem;
+    }
+    .opti-s-box-text h3 {
+        font-size: 1.4rem;
+    }
+
+}
+
+

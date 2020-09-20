@@ -1,0 +1,377 @@
+/* 
+    Designing Page
+*/
+
+#design {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.design-t-left {
+    flex: 1;
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.design-t-text {
+    text-align: right;
+    padding: 0 10%;
+    max-width: 550px;
+}
+
+.design-t-text h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #000000;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.design-t-text h3 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: #777777;
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.design-t-btn {
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #490a29;
+    border: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: 0.5s all;
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.design-t-btn i {
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+.design-t-btn:focus,
+.design-t-btn:active,
+.design-t-btn:hover {
+    background-color: #2a101d;
+}
+
+.design-t-right {
+    flex: 1;
+    background-image:url(../images/designing_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.design-t-headings {
+    text-align: left;
+    padding: 0 10%;
+    max-width: 550px;
+}
+
+.design-t-headings h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.design-t-headings h2 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.design-services {
+    width: 100%;
+    background: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-s-boxes {
+    width: 94%;
+    max-width: 1100px;
+    padding: 5rem 0;
+    display: grid;
+    grid-gap: 3rem 2%;
+    grid-template-columns: 32% 32% 32%;
+}
+
+.d-s-box {
+    background: #ffffff;
+    /* box-shadow: 0 0 15px rgba(0,0,0,0.1); */
+    display: flex;
+    flex-direction: column;
+    padding: 10% 10% 15% 10%;
+    transition: 0.4s all;
+    position: relative;
+    cursor: pointer;
+}
+
+.d-s-box::after {
+    content: "";
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    height: 6px;
+    border-radius: 2em;
+    background: #490a29;
+    transition: 0.4s all;
+}
+
+.d-s-box-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-s-box-head img {
+    width: 60px;
+    height: 60px;
+}
+
+.d-s-box-head h1 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #111111;
+    margin: 1.2em 0 1em 0;
+    transition: 0.4s all;
+}
+
+.d-s-box-body {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.d-s-box-body p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333333;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+
+.d-s-box:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.d-s-box:hover:hover::after {
+    width: 60%;
+    background: #2a101d;
+}
+.d-s-box:hover .d-s-box-head h1 {
+    color: #2a101d;
+}
+
+.d-s-even {
+    width: 94%;
+    max-width: 1100px;
+}
+
+.d-s-even h1 {
+    font-size: 3rem;
+    color: #000000;
+    font-weight: 400;
+    margin: 0;
+}
+
+.d-s-even h1 span {
+    font-weight: 900;
+    color: #490a29;
+}
+
+.d-s-even-boxes {
+    max-width: 100%;
+    padding: 5rem 0;
+    display: grid;
+    grid-gap: 3rem 2%;
+    grid-template-columns: 32% 32% 32%;
+}
+
+.d-s-even-box {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 2% 10% 2%;
+    transition: 0.4s all;
+    position: relative;
+    cursor: pointer;
+}
+
+.d-s-even-box img {
+    max-width: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.d-s-even-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    padding-left: 1em;
+    text-transform: uppercase;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+
+    .design-t-headings h1,
+    .design-t-text h1 {
+        font-size: 4rem;
+    }
+
+    .design-t-text h3 {
+        font-size: 1.8rem;
+    }
+
+    .design-t-headings h2 {
+        font-size: 3.4rem;
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .d-s-boxes {
+        padding: 7rem 0 4rem 0;
+        grid-gap: 3rem 4%;
+        grid-template-columns: 48% 48%;
+    }
+    
+    .d-s-even-boxes {
+        padding: 4rem 0 7rem 0;
+        grid-gap: 3rem 4%;
+        grid-template-columns: 48% 48%;
+    }
+
+
+}
+
+@media (max-width: 650px) {
+
+    .design-top {
+        flex-direction: column;
+    }
+
+    .design-t-left {
+        order: 1;
+        min-height: auto;
+        justify-content: center;
+    }
+    .design-t-text {
+        text-align: center;
+        padding: 15vh 0;
+        max-width: 550px;
+    }
+
+    .design-t-headings h1,
+    .design-t-text h1 {
+        font-size: 3rem;
+    }
+    .design-t-headings h2 {
+        font-size: 2.4rem;
+    }
+    .design-t-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .design-t-text h1 br {
+        display: none;
+    }
+
+    .design-t-right {
+        justify-content: center;
+    }
+
+    .design-t-headings {
+        text-align: center;
+        padding: 15vh 0;
+    }
+    
+    .design-t-btn {
+        float: none;
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 550px) {
+
+    .d-s-boxes {
+        padding: 5rem 0 4rem 0;
+        grid-gap: 2rem 4%;
+        grid-template-columns: 100%;
+    }
+    .d-s-box {
+        padding: 3% 3% 6% 3%;
+    }
+    .d-s-box::after {
+        bottom: 6%;
+    }
+    .d-s-box-head h1 {
+        margin: 1em 0 0.5em 0;
+    
+    }
+    
+    .d-s-even-boxes {
+        padding: 4rem 0 5rem 0;
+        grid-gap: 2rem 4%;
+    }
+
+    .d-s-even-box {
+        flex-direction: column;
+    }
+
+    .d-s-even-text {
+        padding-right: 1em;
+        padding-top: 1em;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .design-t-text h1 {
+        font-size: 2rem;
+    }
+    .design-t-text h3 {
+        font-size: 1.4rem;
+        margin-top: 0.8em;
+        padding: 0 1em;
+    }
+
+
+}

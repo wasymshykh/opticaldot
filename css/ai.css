@@ -1,0 +1,362 @@
+#ai {
+    width: 100%;
+    display: block;
+}
+
+.ai-big {
+    width: 100%;
+    background-image: url(../images/ai/ai-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-big-text {
+    width: 80%;
+    max-width: 1000px;
+    margin: 10rem auto -5rem auto;
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    padding: 3rem 2rem;
+}
+
+.ai-big-text h1 {
+    font-size: 3rem;
+    color: #2a101d;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ai-big-para {
+    width: 94%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+.ai-big-para::before {
+    content: "";
+    left: -2%;
+    top: 5%;
+    width: 2px;
+    height: 90%;
+    position: absolute;
+    background-color: #e0e0e0;
+}
+
+.ai-big-para p {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.ai-big-text h3 {
+    font-size: 3rem;
+    color: #2a101d;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 1em 0 0 0;
+    text-align: center;
+}
+
+.ai-big-text h3 span {
+    font-weight: 900;
+    color: #490a29;
+    display: inline-block;
+}
+
+/* AI Services */
+
+.ai-s {
+    width: 100%;
+    background-color: #f1f1f1;
+    display: block;
+}
+
+.ai-services {
+    width: 94%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 0 5rem 0;
+}
+
+.ai-services-title {
+    width: 100%;
+    display: block;
+}
+
+.ai-services-title h1 {
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 0;
+}
+
+.ai-services-title h1 span {
+    color: #2a101d;
+    font-weight: 900;
+}
+
+.ai-services-title p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.4em;
+    color: #000000;
+    margin: 0.5em 0 1em 0;
+}
+
+.ai-services-boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-s-box-t1 {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 3rem 0;
+    position: relative;
+    padding: 4rem 2rem;
+}
+
+.ai-s-box-t2 {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 3rem 0;
+    padding: 4rem 2rem;
+    position: relative;
+}
+
+.ai-s-box-num {
+    position: absolute;
+    background-color: #490a29;
+    width: 80px;
+    height: 80px;
+    -webkit-clip-path: circle(50% at 0 0);
+    clip-path: circle(50% at 0 0);
+    
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding-left: 0.5em;
+    line-height: 34px;
+
+    left: 0;
+    top: 0;
+}
+
+.ai-s-box-text {
+    flex: 3;
+}
+
+.ai-s-box-t2 > .ai-s-box-text {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.ai-s-box-text h1 {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 700;
+    margin: 0 0 1rem 0;
+}
+
+.ai-s-box-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #000000;
+    font-weight: 300;
+    margin: 0 0 0 0;
+    padding: 0 1em;
+}
+
+.ai-s-box-t1 > .ai-s-img {
+    flex: 1;
+}
+.ai-s-box-t1 > .ai-s-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ai-s-box-t2 > .ai-s-img {
+    flex: 1;
+}
+
+.ai-s-box-t2 > .ai-s-img img {
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.ai-services-bottom {
+    width: 100%;
+    display: block;
+}
+
+.ai-services-bottom h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin:0;
+}
+
+.ai-services-bottom h2 span {
+    font-weight: 900;
+    color: #490a29;
+}
+
+.ai-services-tech {
+    width: 100%;
+    max-width: 1000px;
+    margin: 5rem auto 0 auto;
+    display: flex;
+}
+
+.ai-s-tech-text {
+    flex: 1;
+    align-self: center;
+}
+
+.ai-s-tech-text h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ai-s-tech-text h1 span {
+    font-weight: 900;
+    color: #2a101d;
+}
+
+.ai-s-tech-icons {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.ai-icon-box {
+    background: #fff;
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.ai-icon-box img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.ai-icon-box-text {
+    width: 100%;
+    padding-top: 0.5rem;
+}
+
+.ai-icon-box-text p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.8rem;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+
+    .ai-big-text {
+        width: 90%;
+        margin: 6rem auto -5rem auto;
+        padding: 4rem 2rem;
+    }
+
+    .ai-big-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .ai-big-para p {
+        font-size: 1rem;
+    }
+
+    .ai-big-text h3 {
+        font-size: 2.4rem;
+    }
+
+    .ai-services-title h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .ai-services-title p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .ai-s-box-t1 {
+        flex-direction: column;
+    }
+    .ai-s-box-t1 > .ai-s-box-text {
+        margin-bottom: 2rem;
+    }
+
+    .ai-s-box-t1 > .ai-s-img img {
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .ai-s-box-text h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .ai-s-box-text p {
+        text-align: center;
+    }
+
+    .ai-services-bottom h2 {
+        text-align: center;
+    }
+
+    .ai-services-tech {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ai-s-tech-icons {
+        margin-top: 2rem;
+    }
+
+    
+
+}
+
+@media (max-width: 500px) {
+
+    .ai-big-text h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .ai-big-para::before {
+        left: -5%;;
+    }
+
+}

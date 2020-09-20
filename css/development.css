@@ -1,0 +1,841 @@
+#pages-head {
+    width: 100%;
+    display: table;
+    background: #ffffff;
+}
+
+.pages-heading {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: table;
+    padding: 5rem 0 0 0;
+}
+
+.pages-heading h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #000000;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Services table */
+
+#services-t {
+    width: 100%;
+    display: table;
+    background-color: #fff;
+}
+
+.service-t-inner {
+    width: 100%;
+    max-width: 1100px;
+    padding: 5rem 0;
+    margin: 0 auto;
+    position: relative;
+}
+
+.service-t-inner > .service-t-abs-h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #490a29;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    text-align: center;
+    width: 100%;
+}
+.service-t-inner > .service-t-abs-h2 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #000000;;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    text-align: center;
+    width: 100%;
+}
+
+.service-t-inner img {
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Web Development */
+
+#webDev {
+    width: 100%;
+    display: table;
+    background: #f9f9f9;
+    position: relative;
+}
+
+.webDev-inner {
+    width: 94%;
+    max-width: 1100px;
+    padding: 5rem 0;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.webDev-heading {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.webDev-top-head {
+    width: 100%;
+    display: table;
+}
+
+.webDev-top-head h1 {
+    font-size: 3.4rem;
+    font-weight: 900;
+    color: #2a101d;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 0;
+}
+
+.webDev-top-head h1 span{
+    color: #000000;
+    font-weight: 300;
+}
+
+.webDev-top-head p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4em;
+    color: #333333;
+    margin: 0.5em 0 1em 0;
+}
+
+.webDev-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.webDev-box {
+    flex: 1 1 ;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.webDev-box img {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem 0;
+}
+
+.webDev-box p {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 0.9em;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+}
+
+.webDev-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem 1rem 1rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.webDev-text {
+    width: 100%;
+    display: table;
+}
+
+.webDev-text h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #490a29;
+    text-transform: uppercase;
+    line-height: 1em;
+    text-align: right;
+    margin: 0;
+}
+
+.webDev-text p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.4em;
+    margin-top: 2em;
+}
+
+.webDev-text ul {
+    margin: 2rem 0;
+    padding: 0 0 0 0;
+    list-style: none;
+}
+
+.webDev-text ul li {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1em;
+    margin: 1em 0;
+}
+
+.webProcess {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.webProcess h3 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #490a29;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 1rem 0 2rem 0;
+}
+
+.webProcess-boxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5rem;
+    margin: 1rem 0;
+}
+
+.webProcess-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    position: relative;
+    padding: 2rem 1.5rem;
+}
+
+.webProcess-box:nth-child(3)::before {
+    content: "";
+    bottom: -2.5rem;
+    height: 2.5rem;
+    width: 2px;
+    left: 50%;
+    background: #2a101d;
+    position: absolute;
+}
+
+.webProcess-box:not(:last-child):not(:nth-child(3))::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5rem;
+    background: #2a101d;
+    width: 5rem;
+    height: 2px;
+}
+
+.webProcess-box:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    bottom: -2.5em;
+    right: 50%;
+    background: #2a101d;
+    width: calc((100% + 5rem) + (100% + 5rem));
+    height: 2px;
+}
+
+.webProcess-box:nth-child(4)::before {
+    content: "";
+    top: calc(-2.5rem - 2px);
+    height: calc(2.5rem + 2px);
+    width: 2px;
+    left: calc(50% - 1px);
+    background: #2a101d;
+    position: absolute;
+}
+
+.webProcess-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.webProcess-box h2 {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 900;
+    margin: 1rem 0;
+}
+
+.webProcess-text {
+    padding-top: 0.5rem;
+}
+
+.webProcess-text p {
+    font-size: 1rem;
+    color: #333333;
+    margin: 0;
+    font-weight: 300;
+}
+
+
+.webTechnologies {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    padding: 2rem 1rem;
+}
+
+.webTechnologies h1 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0 0 3rem 0;
+}
+
+.webTechnologies h1 span {
+    font-weight: 900;
+}
+
+.webTech {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    padding: 0 1rem;
+    grid-gap: 2rem;
+    justify-content: space-around;
+}
+
+.webTech-img {
+    display: block;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-sizing: content-box;
+}
+
+.webTech-img img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/* App Development */
+
+#appDev {
+    width: 100%;
+    display: table;
+    background: #f1f1f1;
+    position: relative;
+}
+
+.appDev-inner {
+    width: 94%;
+    max-width: 1100px;
+    padding: 5rem 0;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.appDev-title {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.appDev-title img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.appDev-title h1 {
+    font-size: 3.4rem;
+    font-weight: 900;
+    color: #2a101d;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 0;
+}
+
+.appDev-title h1 span{
+    color: #000000;
+    font-weight: 300;
+}
+
+.appDev-title p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.4em;
+    color: #333333;
+    margin: 0.5em 0 0 0;
+}
+
+.appDev-title p span {
+    margin: 0 0.5em;
+    font-weight: 900;
+    color: #000000;
+    font-size: 0.8em;
+}
+
+.appDev-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.appDev-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 5rem;
+}
+
+.appDesktop {
+    border-top: 1px solid #dddcdc;
+    padding-top: 5rem;
+}
+
+.appDev-box-top {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.appDev-img {
+    flex: 1;
+}
+
+.appDev-img img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.appDev-text {
+    flex: 2;
+}
+
+.appDev-box-top h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    color: #490a29;
+    text-transform: uppercase;
+    line-height: 1em;
+    margin: 0 0 2rem 0;
+}
+
+.appDev-box-top p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1.4em;
+    margin-top: 2em;
+}
+
+.appDev-box ul {
+    margin: 2rem 0;
+    padding: 0 0 0 0;
+    list-style: none;
+}
+
+.appDev-box ul li {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #000000;
+    line-height: 1em;
+    margin: 1em 0;
+}
+
+.appDev-boxes {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.appDev-s-box {
+    flex: 1;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.5rem;
+    padding: 1rem 0;
+}
+
+.appDev-s-box img {
+    max-width: 50px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 1rem 0;
+}
+
+.appDev-s-box h3 {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 2em;
+    text-align: center;
+    margin: 0;
+}
+
+.appDev-order {
+    flex: 1;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.appDev-orderText {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.appDev-orderText h1 {
+    font-size: 220%;
+    font-weight: 400;
+    color: #111111;
+    line-height: 1.4em;
+}
+
+.appDev-orderText a {
+    font-size: 70%;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #951f3f;
+    border-radius: 2em;
+    padding: 10px 40px;
+    margin-right: 10px;
+    transition: 0.5s cubic-bezier(1,0,0,1);
+    border: 2px solid transparent;
+}
+
+.appDev-orderText a:hover {
+    background: none;
+    color: #951f3f;
+    border: 2px solid #951f3f;
+}
+
+.appDev-orderText h3 {
+    font-size: 180%;
+    font-weight: 300;
+    color: #777777;
+    line-height: 2em;
+}
+
+@media (max-width: 768px) {
+
+    .service-t-inner > .service-t-abs-h1 {
+        font-size: 1.6rem
+    }
+
+    .service-t-inner > .service-t-abs-h2 {
+        font-size: 1.2rem;
+    
+    }
+
+    .webDev-top-head h1,
+    .appDev-title h1 {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .webDev-top-head p,
+    .appDev-title p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .webDev-box img {
+        max-width: 60px;
+    }
+
+    .webDev-box p {
+        font-size: 0.8rem;
+    }
+
+    .webProcess h3,
+    .webDev-text h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .webDev-text p {
+        font-size: 1rem;
+    }
+
+    .webDev-text ul li {
+        font-size: 1.1rem;
+    }
+
+    .webProcess-boxes {
+        grid-template-columns: auto auto;
+    }
+
+    .webProcess-box:nth-child(2)::before {
+        content: "";
+        bottom: -2.5rem;
+        height: 2.5rem;
+        width: 2px;
+        left: 50%;
+        background: #2a101d;
+        position: absolute;
+    }
+
+    .webProcess-box:not(:last-child):not(:nth-child(2))::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -5rem;
+        background: #2a101d;
+        width: 5rem;
+        height: 2px;
+    }
+    
+    .webProcess-box:nth-child(2)::after {
+        content: "";
+        position: absolute;
+        top: unset !important;
+        bottom: -2.5em;
+        right: 50% !important;
+        background: #2a101d;
+        width: calc((100% + 5rem)) !important;
+        height: 2px !important;
+    }
+    .webProcess-box:nth-child(4)::after {
+        content: "";
+        position: absolute;
+        top: unset !important;
+        bottom: -2.5em;
+        right: 50% !important;
+        background: #2a101d;
+        width: calc((100% + 5rem)) !important;
+        height: 2px !important;
+    }
+    .webProcess-box:nth-child(3)::before {
+        top: -2.5rem;
+    }
+
+    .webProcess-box:nth-child(4)::before {
+        content: "";
+        top: unset;
+        bottom: -2.5rem;
+        height: 2.5rem;
+        width: 2px;
+        left: 50%;
+        background: #2a101d;
+        position: absolute;
+    }
+
+    .webProcess-box:nth-child(5)::before {
+        content: "";
+        top: -2.5rem;
+        height: 2.5rem;
+        width: 2px;
+        left: 50%;
+        background: #2a101d;
+        position: absolute;
+    }
+
+
+    .appDev-box-top {
+        flex-direction: column;
+    }
+    .appDev-img img {
+        max-width: 250px;
+    }
+
+    .appDev-box-top h1 {
+        color: #2a101d;
+        font-size: 2rem;
+        margin: 2rem 0 1rem 0;
+        text-align: center;
+        font-weight: 900;
+    }
+    
+
+    .appDev-box-top p {
+        font-size: 1rem;
+        margin-top: 1.5em;
+    }
+
+    .appDev-title p span {
+        display: inline-block;
+    }
+
+    .appDev-box ul li {
+        font-size: 1.1rem;
+    }
+
+    .appDev-boxes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .appDev-s-box {
+        flex-basis: 21%;
+        margin: 2%;
+    }
+    .appDev-s-box img {
+        max-width: 30px;
+    }
+
+
+    
+
+}
+
+@media (max-width: 600px) {
+
+    .webDev-top-head h1, .appDev-title h1 {
+        font-size: 2rem;
+    }
+
+    .webProcess h3, .webDev-text h1 {
+        font-size: 2rem;
+    }
+
+    .webTechnologies h1 {
+        font-size: 1.4rem;
+    }
+
+    .webTech {
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 1rem;
+    }
+
+    .webProcess-boxes {
+        grid-gap: 5rem 3rem;    
+    }
+
+    .webProcess-box:nth-child(4)::after,
+    .webProcess-box:nth-child(2)::after {
+        width: calc((100% + 3.6rem)) !important;
+    }
+
+
+
+}
+
+@media (max-width: 500px) {
+
+    .pages-heading h1 {
+        font-size: 2.8rem;
+    }
+
+    .service-t-inner {
+        width: 94%;
+    }
+
+    .service-t-inner > .service-t-abs-h1 {
+        font-size: 1.2rem;
+        top: 8%;
+    }
+    .service-t-inner > .service-t-abs-h2 {
+        font-size: 0.8rem;
+    }
+
+    .webDev-top-head h1, .appDev-title h1 {
+        font-size: 1.6rem;
+    }
+
+    .webDev-boxes {
+        margin: 0 0 2rem 0;
+    }
+    .webDev-box {
+        flex-basis: 46%;
+        margin: 2%;
+    }
+    .webDev-box p {
+        margin: 0 0 0 0;
+    }
+
+    .webProcess h3, .webDev-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .webTechnologies h1 {
+        font-size: 1rem;
+    }
+    .webTech-img img {
+        max-width: 30px;
+    }
+
+    .webProcess-boxes {
+        grid-gap: 3rem;
+        grid-template-columns: auto;
+    }
+    .webProcess-box img {
+        width:40px;
+        height:40px;
+    }
+
+    .webProcess-box h2 {
+        font-size: 0.9rem;
+        margin: 1rem 0 0.5rem 0;
+    }
+
+    .webProcess-box:not(:last-child)::after {
+        content: "";
+        top: unset !important;
+        bottom: -5rem !important;
+        height: 5rem !important;
+        width: 2px !important;
+        left: 50% !important;
+    }
+    .webTech-img img {
+        max-width: 24px;
+    }
+
+    .appDev-box-top h1 {
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #000000;
+    }
+
+    .appDev-box-top h1 span {
+        font-weight: 900;
+        color: #2a101d;
+        font-size: 0.95em;
+    }
+
+    .appDev-s-box h3 {
+        font-size: 0.7rem;
+    }
+
+    .appDev-img img {
+        max-width: 220px;
+    }
+
+}

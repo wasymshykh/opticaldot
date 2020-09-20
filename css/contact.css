@@ -1,0 +1,444 @@
+/* 
+    Contact
+*/
+
+#contactPage {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+#contactPage::after {
+    content: "";
+    background: url(../images/contact_bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: left center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contact-wrap {
+    width: 94%;
+    max-width: 1100px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contact-text {
+    padding: 10vh 0;
+}
+
+.contact-text h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-text h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #490a29;
+    margin: 0;
+    padding: 0.1em 0;
+}
+
+.phone-number::before {
+    content: "";
+    width: 1px;
+    height: calc(50% - 2rem);
+    top: 0;
+    left: 10%;
+    position: absolute;
+    background: #000000;
+}
+
+.phone-number::after {
+    content: "";
+    width: 1px;
+    height: calc(50% - 2rem);
+    bottom: 0;
+    left: 10%;
+    position: absolute;
+    background: #000000;
+}
+
+.phone-number {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    padding: 10vh 0;
+    position: relative;
+}
+
+.phone-number span {
+    font-weight: 300;
+    padding-right: 0.3em;
+}
+
+.drop-email {
+    width: 100%;
+    position: relative;
+    padding-bottom: 10vh;
+}
+
+.drop-email h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.drop-email p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.drop-email::after {
+    content: "";
+    width: 1px;
+    height: calc(100% - 6rem);
+    bottom: 0;
+    left: 10%;
+    position: absolute;
+    background: #000000;
+}
+
+
+.social-buttons {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+}
+
+.social-buttons a {
+    width: 50px;
+    height: 50px;
+    background: #490a29;
+    margin: 0 5px;
+    border-radius: 50%;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.social-buttons a:last-child {
+    font-size: 1.2em;
+}
+
+.contact-form::before {
+    content: "";
+    width: 3%;
+    height: 100%;
+    top: 0;
+    left: -3%;
+    position: absolute;
+    background: rgba(73, 10, 41, 1);
+}
+
+.contact-form {
+    width: 50%;
+    max-width: 400px;
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 65%;
+    padding: 20px 0;
+    transform: translate(-50%, -50%);
+}
+
+.contact-submit {
+    width: 100%;
+    display: block;
+    background: #490a29;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 300;
+    padding: 1em 0;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form .row .col .row:last-child {
+    margin-bottom: 0;
+}
+
+.contact-form .input-field {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.contact-form input[type="text"]:not(.browser-default),
+.contact-form input[type="email"]:not(.browser-default),
+.contact-form textarea.materialize-textarea,
+.contact-form .input-field > label {
+    font-size: 0.8rem;
+}
+
+.contact-form textarea.materialize-textarea {
+    min-height: 200px;
+}
+
+.contact-form input[type="text"]:not(.browser-default):focus:not([readonly]),
+.contact-form input[type="email"]:not(.browser-default):focus:not([readonly]),
+.contact-form textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #490a29;
+    -webkit-box-shadow: 0 1px 0 0 #490a29;
+    box-shadow: 0 1px 0 0 #490a29;
+}
+
+.contact-form input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+.contact-form input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+.contact-form textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: #490a29;
+}
+
+.contact-form .input-field > label:not(.label-icon).active {
+    transform: translateY(-14px) scale(1);
+}
+
+.contact-form .select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid #490a29;
+}
+
+.contact-form .dropdown-content li {
+    min-height: 30px;
+    line-height: 1.2rem;
+}
+
+.contact-form .dropdown-content li > a, .dropdown-content li > span {
+    font-size: 0.8rem;
+    display: block;
+    line-height: 22px;
+    padding: 0.8em 1em;
+}
+
+.contact-form [type="checkbox"] + span:not(.lever) {
+    font-size: 0.8rem;
+    padding-left: 30px;
+}
+
+.contact-form [type="checkbox"]:checked + span:not(.lever)::before {
+    top: 0;
+    left: 0px;
+    width: 8px;
+    height: 16px;
+    border-right: 2px solid #490a29;
+    border-bottom: 2px solid #490a29;
+}
+
+.contact-form [type="checkbox"]:not(.filled-in) + span:not(.lever)::after,
+[type="checkbox"] + span:not(.lever)::before {
+    top: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+@media (max-width: 1024px) {
+    
+    .contact-text h2,
+    .contact-text h1 {
+        font-size: 2rem;
+    }
+
+    .phone-number {
+        font-size: 1.5rem;
+        padding: 8vh 0;
+    }
+
+    .drop-email {
+        padding-bottom: 8vh;
+    }
+
+    .drop-email h3,
+    .drop-email p {
+        font-size: 1.5rem;
+    }
+
+    .drop-email::after {
+        height: calc(100% - 4rem);
+    }
+
+    .social-buttons a {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        line-height: 40px;
+    }
+
+    .contact-form textarea.materialize-textarea {
+        min-height: 140px;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+
+
+    #contactPage::after {
+        display: none;
+    }
+
+    .contact-text {
+        flex: 1;
+    }
+
+    .contact-form {
+        flex: 1;
+        width: auto;
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+        max-width: unset;
+        box-shadow: unset;
+        padding: 20px 0;
+        min-height: 600px;
+    }
+
+    .contact-form > .row {
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+
+    .phone-number {
+        padding: 80px 0;
+    }
+    .drop-email {
+        padding-bottom: 80px;
+    }
+
+    .contact-text h2,
+    .contact-text h1 {
+        font-size: 1.6rem;
+    }
+
+    .phone-number {
+        font-size: 1.2rem;
+    }
+
+    .drop-email h3,
+    .drop-email p {
+        font-size: 1.2rem;
+    }
+
+    .drop-email::after {
+        height: calc(100% - 3rem);
+    }
+
+    .social-buttons a {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+        margin: 0 8px;
+        line-height: 30px;
+    }
+    .social-buttons a:last-child {
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .contact-wrap {
+        flex-direction: column;
+    }
+
+    .contact-text {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5vh;
+    }
+
+    .contact-text h1 {
+        display: none;
+    }
+
+    .contact-text h2 {
+        flex: 1 1 100%;
+        font-size: 3rem;
+        font-weight: 300;
+    }
+
+    .phone-number {
+        padding: 0 0;
+        flex: 1 1 100%;
+        align-self: center;
+        font-size: 1.5rem;
+    }
+    
+    .phone-number::after {
+        display: none;
+    }
+    .phone-number::before {
+        display: none;
+    }
+
+    .drop-email {
+        padding: 1rem 0;
+        flex: 1 1 100%;
+    }
+
+    .drop-email::after {
+        display: none;
+    }
+
+    .drop-email h3,
+    .drop-email p {
+        font-size: 1.5rem;
+    }
+
+    .social-buttons {
+        margin-top: 0.2em;
+        justify-content: space-evenly;
+    }
+    
+    .contact-form {
+        min-height: 500px;
+        margin-bottom: 10vh;
+    }
+
+    .contact-form::before {
+        width: 50%;
+        height: 50%;
+        background: none;
+        border-top: 3px solid rgba(73, 10, 41, 1);
+        border-left: 3px solid rgba(73, 10, 41, 1);
+        left: 0%;
+        pointer-events: none;
+    }
+    .contact-form::after {
+        content: "";
+        width: 50%;
+        height: 50%;
+        bottom: 0;
+        right: 0%;
+        position: absolute;
+        border-bottom: 3px solid rgba(73, 10, 41, 1);
+        border-right: 3px solid rgba(73, 10, 41, 1);
+        pointer-events: none;
+    }
+
+
+
+
+
+}

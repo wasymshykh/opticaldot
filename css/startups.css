@@ -1,0 +1,507 @@
+#startups-top {
+    width: 100%;
+    display: flex;
+}
+
+.startups-left {
+    height: 80vh;
+    min-height: 700px;
+    max-height: 900px;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.startups-text {
+    display: block;
+    padding: 10rem 3rem 10rem 2rem;
+}
+
+.startups-text img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.startups-text h1 {
+    font-size: 2rem;
+    color: #2a101d;
+    font-weight: 900;
+    margin: 2rem 0 1rem 0;
+    text-transform: uppercase
+}
+
+.startups-text ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.startups-text ul li {
+    display: flex;
+    margin: 1.5rem 0;
+}
+
+.startups-text ul li i {
+    font-size: 1.4rem;
+    width: 2rem;
+    text-align: center;
+    line-height: 1;
+    color: #490a29;
+}
+
+.startups-text ul li p {
+    color: #000000;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.startups-text ul li p:hover {
+    color: #490a29;
+}
+
+.startups-img {
+    flex: 1 1;
+    background: url(../images/startups/startup-img.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.startups-img::before {
+    content: "";
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(73, 10, 41,0.5);
+}
+
+.startups-img::after {
+    content: "";
+    width: 5vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(73, 10, 41,1);
+}
+
+/* Sections */
+
+.startups-section {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+#buildBrand {
+    background-color: #f3f3f3;
+}
+#buildWeb {
+    background-color: #ffffff;
+}
+#buildAI {
+    background-color: #f3f3f3;
+}
+
+.startups-inner {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+
+.startups-top-text {
+    display: flex;
+}
+
+.startups-t-text {
+    flex: 2;
+}
+
+.startups-t-text h1 {
+    font-size: 2.8rem;
+    color: #111;
+    font-weight: 300;
+    margin: 0;
+}
+
+.startups-t-text h1 span {
+    font-weight: 900;
+    color: #490a29
+}
+
+.startups-t-text p {
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: 300;
+    margin: 1rem 0;
+    padding: 0 2rem;
+}
+
+.startups-t-btns {
+    width: 100%;
+}
+
+.startups-t-btns p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 2rem 0 1rem 0;
+    text-transform: uppercase
+}
+
+.startups-t-btns p a {
+    font-size: 0.9rem;
+    background-color: #490a29;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.startups-t-btns p a i {
+    font-size: 0.9rem;
+    margin: 0 0 0 0.5em;
+}
+
+.startups-t-points {
+    display: block;
+    align-self: center;
+}
+
+.startups-t-points ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.startups-t-points ul li {
+    display: flex;
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: 400;
+    line-height: 1;
+    margin: 1.5rem 0;
+}
+
+.startups-t-points ul li i {
+    font-size: 1.4rem;
+    width: 2rem;
+    color: #490a29;
+    line-height: 1;
+}
+
+.startups-bottom-text {
+    margin: 1rem 0 0 0;
+}
+
+.startups-b-text {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.startups-b-text p {
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: 300;
+    margin: 1rem 0;
+}
+
+
+
+
+.startups-full-text {
+    display: flex;
+}
+
+.startups-f-text {
+    flex: 1;
+}
+
+.startups-f-text h1 {
+    font-size: 2.8rem;
+    color: #111;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+.startups-f-text h1 span {
+    font-weight: 900;
+    color: #490a29
+}
+
+.startups-f-text p {
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: 300;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.startups-t-boxes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2rem;
+    margin: 3rem 0 3rem 0;
+}
+
+.startups-t-box {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startups-t-box-img {
+    display: flex;
+    background: #490a29;
+    border-radius: 50%;
+    width: calc(50px + 2rem);
+    height: calc(50px + 2rem);
+    padding: 1rem;
+}
+
+.startups-t-box-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.startups-t-box-text {
+    margin-top: 1rem;
+}
+
+.startups-t-box-text h3 {
+    color: #000000;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.startups-half-text {
+    display: flex;
+}
+
+.startups-h-text {
+    flex: 1;
+}
+
+.startups-h-text h1 {
+    font-size: 2.8rem;
+    color: #111;
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+.startups-h-text h1 span {
+    font-weight: 900;
+    color: #490a29;
+    display: inline-block;
+}
+
+.startups-h-text p {
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: 300;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.startups-h-boxes {
+    flex: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    margin-left: 2rem;
+    align-items: center;
+}
+
+.startups-h-box h3 {
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 0 0.5em 0;
+}
+
+.startups-h-box p {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #000000;
+}
+
+@media (max-width: 768px){
+
+    .startups-left {
+        flex: 2;
+    }
+
+    .startups-top-text {
+        flex-direction: column
+    }
+
+    .startups-t-points ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .startups-t-btns {
+        background: #490a29;
+        padding: 2rem 0;
+        margin: 1rem 0 1rem 0;
+    }
+    .startups-t-btns p {
+        color: #ffffff;
+        margin: 0;
+    }
+    .startups-t-btns p a {
+        color: #ffffff;
+        font-weight: 900;
+    }
+
+    .startups-t-points ul li {
+        font-size: 1.2rem;
+        margin: 1.5rem 1rem;
+    }
+
+    .startups-t-text p,
+    .startups-b-text p,
+    .startups-f-text p,
+    .startups-h-text p {
+        font-size: 1.2rem;
+    }
+
+    .startups-half-text {
+        flex-direction: column;
+    }
+
+    .startups-h-boxes {
+        margin: 2rem 0;
+    }
+
+
+}
+
+@media (max-width: 550px) {
+
+    #startups-top {
+        flex-direction: column;
+    }
+    .startups-left {
+        align-items: center;
+    }
+    .startups-img {
+        display: none;
+    }
+
+    .startups-text {
+        display: block;
+        padding: 10rem 2rem 10rem 2rem;
+    }
+
+    .startups-text h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .startups-text ul li p {
+        font-size: 1.2rem;
+    }
+    .startups-text ul li i {
+        font-size: 1.2rem;
+        width: 1.5rem;
+    }
+
+    .startups-h-text h1,
+    .startups-f-text h1,
+    .startups-t-text h1 {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    .startups-t-btns p {
+        font-size: 0.8rem;
+    }
+    .startups-t-btns p a {
+        font-size: 0.8rem;
+    }
+
+    
+    .startups-t-points ul li {
+        font-size: 1rem;
+        margin: 1.5rem 1rem;
+    }
+
+    .startups-t-boxes {
+        grid-template-columns: auto auto auto;
+    }
+    .startups-t-box {
+        padding: 1rem 1rem;
+    }
+    .startups-t-box-img {
+        width: calc(30px + 2rem);
+        height: calc(30px + 2rem);
+    }
+    .startups-t-box-text h3 {
+        font-size: 0.9rem;
+    }
+
+    .startups-t-btns {
+        margin: 2rem 0 1.5rem 0;
+    }
+
+    .startups-t-points ul li {
+        margin: 1rem 1rem;
+    }
+    .startups-t-points ul li i {
+        font-size: 1rem;
+        width: 1.5rem;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+    .startups-left {
+        min-height: 60vh;
+        max-height: 600px;
+    }
+
+    .startups-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .startups-t-boxes {
+        grid-template-columns: auto auto;
+        grid-gap: 1rem;
+    }
+
+    .startups-h-boxes {
+        grid-template-columns: auto;
+        margin-left: 0;
+    }
+
+}
