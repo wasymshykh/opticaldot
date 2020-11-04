@@ -53,22 +53,21 @@ if(window.innerWidth <= 650) {
 }
 document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('.carousel');
-	var instances = M.Carousel.init(elems, {numVisible: items, dist:-50, padding: 10});
+	M.Carousel.init(elems, {numVisible: items, dist:-50, padding: 10});
 });
 
 document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('select');
-	var instances = M.FormSelect.init(elems);
+	M.FormSelect.init(elems);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
 	var elems = document.querySelectorAll('.tooltipped');
-	var instances = M.Tooltip.init(elems, {
+	M.Tooltip.init(elems, {
 		margin: -5,
 		enterDelay: 100
 	});
 });
-
 
 document.addEventListener('DOMContentLoaded',()=>{
 	const pageLoad = document.querySelector('#page-loader');

@@ -40,54 +40,6 @@
         
                     <div class="input-row">
                         <div class="input-field">
-                            <select name="services[]" multiple id="selector">
-                                <option value="" disabled selected>Choose your option</option>
-                                <optgroup label="Brand">
-                                    <option value="Brand Theme">Theme</option>
-                                    <option value="Brand Viability Study">Viability Study</option>
-                                    <option value="Brand Audience Specialization">Audience Specialization</option>
-                                </optgroup>
-    
-                                <optgroup label="Design">
-                                    <option value="Brand Graphics">Graphics</option>
-                                    <option value="Brand Web Design">Web Design</option>
-                                    <option value="Brand App Design">App Design</option>
-                                </optgroup>
-                            
-                                <optgroup label="Development">
-                                    <option value="Web Development">Web Development</option>
-                                    <option value="App Development">App Development</option>
-                                    <option value="Desktop Development">Desktop Development</option>
-                                    <option value="Hardware Development">Hardware Development</option>
-                                </optgroup>
-                            
-                                <optgroup label="Customization">
-                                    <option value="CMS Modification">CMS Modification</option>
-                                    <option value="Plugin Creation">Plugin Creation</option>
-                                    <option value="Library Development">Library Development</option>
-                                </optgroup>
-                            
-                                <optgroup label="Optimization">
-                                    <option value="Database Optimization">Database Optimization</option>
-                                    <option value="SEO">Search Engine Development</option>
-                                    <option value="Website Management">Website Management</option>
-                                    <option value="Social Media Management">Social Media Management</option>
-                                    <option value="Hardware Development">App Maintenance</option>
-                                </optgroup>
-                            
-                                <optgroup label="Marketing">
-                                    <option value="Search Engine Marketing">Search Engine Marketing</option>
-                                    <option value="Social Media Marketing">Social Media Targeted Marketing</option>
-                                    <option value="Affiliate Advertising">Affiliate Advertising</option>
-                                    <option value="Incentivized Marketing">Incentivized Traffic Marketing</option>
-                                </optgroup>
-                            </select>
-                            <label for="selector" class="cat-small">Category</label>
-                        </div>
-                    </div>
-        
-                    <div class="input-row">
-                        <div class="input-field">
                             <textarea name="message" id="textarea1" class="materialize-textarea"></textarea>
                             <label for="textarea1">Write your message</label>
                         </div>

@@ -45,24 +45,102 @@
 }
 
 .webDevShot-top {
-    display: flex;
-    flex-direction: row;
+    width: 100%;
     flex: 1;
     margin: 2rem 0;
 }
 
+
+.owl-carousel .owl-stage-outer {
+    max-height: 50vh;
+    overflow-y: scroll;
+}
+
+.webDevShot-slider .owl-nav {
+    position: absolute;
+    top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.webDevShot-slider .owl-carousel .owl-nav button.owl-next,
+.webDevShot-slider .owl-carousel .owl-nav button.owl-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 2em;
+    line-height: 0.5;
+    color: #ffffff;
+    background: #490a29;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.webDevShot-slider .owl-carousel .owl-nav button.owl-next span,
+.webDevShot-slider .owl-carousel .owl-nav button.owl-prev span {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+.webDevShot-slider .active .visit-overlay {
+    opacity: 1;
+    top: 0.5em;
+}
+.webDevShot-slider .visit-overlay {
+    transition: 2s all;
+    font-size: 0.7em;
+    opacity: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0.3em 1em;
+    border-radius: 4px;
+    background-color: #490a29;
+    position: absolute;
+    right: 1em;
+    top: 2em;
+    color: #ffffff;
+    z-index: 100;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.webDevShot-slider .visit-overlay:hover {
+    background-color: #2a101d;
+}
+
+
+.webDevShot-slider .owl-dots {
+    width: 100%;
+    position: absolute;
+    padding: 1em 0 0.8em 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.1));
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background-color: #490a29;
+    opacity: 0.5;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #490a29;
+    opacity: 1;
+}
+
+
 .webDevShot-slider {
-    flex: 2;
+    width: 70%;
     background: #ffffff;
     padding: 1rem;
+    float: left;
 }
 
 .webDevShot-slider .slider .slides li img {
     background-position: top center;
-}
-
-.webDevShot-slider .slider .indicators .indicator-item.active {
-    background-color: #490a29;
 }
 
 .webDevShot-slider .slider .slides li .visit-overlay {
@@ -89,7 +167,7 @@
 }
 
 .webDevShot-work {
-    flex: 1;
+    width: 30%;
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -113,7 +191,7 @@
 }
 
 .shotWork-tech {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .shotWork-tech:last-child {
@@ -123,10 +201,11 @@
 .shotWork-tech h1 {
     display: inline-block;
     background: #490a29;
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 900;
     color: #ffffff;
-    padding: 0.5em 1em;
+    padding: 0.4em 1em;
     text-transform: uppercase;
     margin: 0;
 }
@@ -143,34 +222,38 @@
 .tech-imgs-icon {
     background: #ffffff;
     padding: 0.5rem;
-    border-radius: 50%;
     margin: 0 2%;
     display: flex;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
 }
 .tech-imgs-icon img {
-    max-width: 50px;
+    max-width: 30px;
     flex-basis: 100%;
     width: 100%;
     height: 100%;
 }
 
 .shotWork-tech ul {
-    margin: 0 0 0 2rem;
     padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
     list-style: none;
 }
 
 .shotWork-tech ul li {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0.5rem;
 }
 
 .shotWork-tech ul li img {
-    width: 20px;
-    height: 20px;
-    margin-right: 1rem;
+    width: 26px;
+    height: 26px;
+    margin-bottom: 0.5em;
+    display: block;
 }
 
 .shotWork-tech ul li span {
@@ -178,6 +261,8 @@
     font-weight: 300;
     text-transform: uppercase;
     color: #000000;
+    letter-spacing: 0.5px;
+    line-height: 1;
 }
 
 
@@ -315,14 +400,25 @@
 
 @media (max-width: 750px){
 
-    .webDevShot-top {
-        flex-direction: column;
+    .webDevShot-slider {
+        width: 100%;
     }
 
+    .owl-carousel .owl-stage-outer {
+        max-height: 70vh;
+    }
+    .shotWork-title {
+        margin-bottom: 1em;
+    }
+    .shotWork-title h1 {
+        font-size: 1.4em;
+    }
     .webDevShot-work {
         flex-direction: row;
         flex-wrap: wrap;
         border-top: 1px solid #e0e0e0;
+        float: none;
+        width: 100%;
     }
 
     .shotWork-tech {

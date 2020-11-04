@@ -218,7 +218,7 @@
 .webProcess-boxes {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 5rem;
+    grid-gap: 4rem;
     margin: 1rem 0;
 }
 
@@ -232,16 +232,6 @@
     padding: 2rem 1.5rem;
 }
 
-.webProcess-box:nth-child(3)::before {
-    content: "";
-    bottom: -2.5rem;
-    height: 2.5rem;
-    width: 2px;
-    left: 50%;
-    background: #2a101d;
-    position: absolute;
-}
-
 .webProcess-box:not(:last-child):not(:nth-child(3))::after {
     content: "";
     position: absolute;
@@ -250,26 +240,6 @@
     background: #2a101d;
     width: 5rem;
     height: 2px;
-}
-
-.webProcess-box:nth-child(3)::after {
-    content: "";
-    position: absolute;
-    bottom: -2.5em;
-    right: 50%;
-    background: #2a101d;
-    width: calc((100% + 5rem) + (100% + 5rem));
-    height: 2px;
-}
-
-.webProcess-box:nth-child(4)::before {
-    content: "";
-    top: calc(-2.5rem - 2px);
-    height: calc(2.5rem + 2px);
-    width: 2px;
-    left: calc(50% - 1px);
-    background: #2a101d;
-    position: absolute;
 }
 
 .webProcess-box img {

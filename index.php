@@ -3,12 +3,8 @@
 <html lang="en">
 <head>
 	
-	<?php
-		
-	require_once "header-common.php";
-	
-	?>
-
+    <?php require_once "header-common.php"; ?>
+    
     <link rel="stylesheet" type="text/css" href="<?=URL?>/css/home.css">
     <link rel="stylesheet" type="text/css" href="<?=URL?>/css/fullpage.css">
 
@@ -16,8 +12,6 @@
 
 	<meta name="google-site-verification" content="8N-48BnhiP-_mzCLhle4LnSiMv7jOhwlKy0t68HNyuk" />
 	
-
-    
     <style>
         body {
             overflow: hidden;
@@ -227,7 +221,7 @@
 <section class="scrollSection" id="techDiv">
     <div id="technology">
 
-        <div class="tech-left">
+        <div class="tech-center">
 
             <div class="tech-heading">
                 <h1>Technology & Services</h1>
@@ -271,8 +265,6 @@
                             <ul>
                                 <li><i class="material-icons">check</i> Database Optimization</li>
                                 <li><i class="material-icons">check</i> Search Engine Optimization</li>
-                                <li><i class="material-icons">check</i> Website Management</li>
-                                <li><i class="material-icons">check</i> Social Media Management</li>
                                 <li><i class="material-icons">check</i> App Maintenance</li>
                             </ul>
                         </div>
@@ -291,147 +283,6 @@
                                 <li><i class="material-icons">check</i> Incentivized Traffic Marketing</li>
                             </ul>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tech-cat-bottom">
-                <div class="business-i">
-                    <h1>AI solutions</h1>
-                    <div class="bi-features bi-features-first">
-                        <div class="bi-box">
-                            <div class="bi-img">
-                                <img src="<?=URL?>/images/icons/bi-icon-1.svg" alt="Performance Insight">
-                            </div>
-                            <div class="bi-box-text">
-                                <h3>Data processing</h3>
-                            </div>
-                        </div>
-                        <div class="bi-box">
-                            <div class="bi-img">
-                                <img src="<?=URL?>/images/icons/bi-icon-2.svg" alt="Accurate Predictions">
-                            </div>
-                            <div class="bi-box-text">
-                                <h3>Machine Learning</h3>
-                            </div>
-                        </div>
-                        <div class="bi-box">
-                            <div class="bi-img">
-                                <img src="<?=URL?>/images/icons/bi-icon-3.svg" alt="Sales Analysis">
-                            </div>
-                            <div class="bi-box-text">
-                                <h3>Deep Learning</h3>
-                            </div>
-                        </div>
-                        <div class="bi-box">
-                            <div class="bi-img">
-                                <img src="<?=URL?>/images/icons/bi-icon-4.svg" alt="Sales Analysis">
-                            </div>
-                            <div class="bi-box-text">
-                                <h3>Data Mining</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bi-features">
-                        <div class="bi-box">
-                            <div class="bi-img">
-                                <img src="<?=URL?>/images/icons/bi-icon-5.svg" alt="Performance Insight">
-                            </div>
-                            <div class="bi-box-text">
-                                <h3>predictive analysis</h3>
-                            </div>
-                        </div>
-                        <div class="bi-box">
-                            <div class="bi-img">
-                                <img src="<?=URL?>/images/icons/bi-icon-6.svg" alt="Accurate Predictions">
-                            </div>
-                            <div class="bi-box-text">
-                                <h3>Business intelligence</h3>
-                            </div>
-                        </div>
-                        <div class="bi-box">
-                            <div class="bi-img">
-                                <img src="<?=URL?>/images/icons/bi-icon-7.svg" alt="Sales Analysis">
-                            </div>
-                            <div class="bi-box-text">
-                                <h3>Data analysis</h3>
-                            </div>
-                        </div>
-                        <div class="bi-box">
-                            <div class="bi-img">
-                                <img src="<?=URL?>/images/icons/bi-icon-3.svg" alt="Sales Analysis">
-                            </div>
-                            <div class="bi-box-text">
-                                <h3>Network analysis</h3>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="bi-paragraph">
-                        <p>With our predictive models, we provide forecasts, predictive maintenance on your data, which
-                            may help you to take data-driven decisions and a spot-on information, to ensure your business
-                            protection.</p>
-                            <a href="<?=URL?>/artificial-intelligence">More Details</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="tech-right">
-
-            <div class="dev-section">
-                <div class="dev-title">
-                    <h1>Development</h1>
-                </div>
-                <div class="dev-list">
-                    <ul class="dev-mainUl">
-                        <li class="dev-firstLi">Web Development
-                            <ul>
-                                <li>Dynamic Website</li>
-                                <li>Backend Database </li>
-                                <li>Internal API Creation</li>
-                                <li>External/3rd Party API Integration</li>
-                                <li>SDK Integration</li>
-                                <li>Progresive Web Development</li>
-                            </ul>
-                        </li>
-                        <li class="dev-secondLi">App Development
-                            <ul>
-                                <li>Native Android Application Development</li>
-                                <li>Native iOS Application Development </li>
-                                <li>Hybrid Android/iOS/Windows App Development</li>
-                                <li>HTML5 Application Development</li>
-                            </ul>
-                        </li>
-                        <li class="dev-thirdLi">Desktop Development
-                            <ul>
-                                <li>.NET Desktop Application</li>
-                                <li>Java Applet/Software</li>
-                            </ul>
-                        </li>
-                        <li class="dev-fourthLi">Hardware Development
-                            <ul>
-                                <li>IoT</li>
-                                <li>Automation</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                
-            </div>
-
-            <div class="tech-cat-boxes">
-                <div class="tech-cat-box tech-startup">
-                    <div class="tech-cat-box-text">
-                        <h3>We support</h3>
-                        <h1>Start ups</h1>
-                    </div>
-                </div>
-                <div class="tech-cat-box tech-domain">
-                    <div class="tech-cat-box-text">
-                        <h3>Domain</h3>
-                        <h1><span>&</span> Hosting</h1>
                     </div>
                 </div>
             </div>
@@ -568,7 +419,7 @@
 
                 <div class="carousel">
 
-                    <div class="carousel-item testimonial-box">
+                <div class="carousel-item testimonial-box">
                         <div class="testimonial-text">
                             <p>Awesome work! I love the page Design Because of the hourly zone maybe we can't get connected at the same time and that cost us a little work and time.
         But The work with Optical Dot was Amazing! Solved everything immediately. Outstanding experience.</p>
@@ -581,6 +432,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="carousel-item testimonial-box">
+                        <div class="testimonial-text">
+                            <p>Fresh creative seller. Cooperation with OpticalDot is pleasure. It is a true professional. Quality and timing of the work above all praise, thank you!</p>
+                            <div class="testimonial-author">
+                                <img src="<?=URL?>/images/clixmatic.jpg">
+                                <div class="testimonial-author-text">
+                                    <h3>Clixmatic</h3>
+                                    <h5>Clixmatic Owner</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item testimonial-box">
+                        <div class="testimonial-text">
+                            <p>Very happy with the results. Seller was helpful throughout the development process and patient with my requested revisions. Would recommend this seller to anyone.</p>
+                            <div class="testimonial-author">
+                                <img src="<?=URL?>/images/customer.jpg">
+                                <div class="testimonial-author-text">
+                                    <h3>tkeyesjr</h3>
+                                    <h5>Customer</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
 
                 </div>
 
@@ -598,93 +477,45 @@
                 <h1>Request a <span>Quote</span></h1>
                 <p></p>
                 <ul>
-                    <li><span class="footer-email"></span> support@opticaldot.com</li>
-                    <li><span class="footer-phone"></span> +92-302-736286</li>
+                    <li><span class="footer-icon footer-email"></span> opticaldotofficial@gmail.com</li>
+                    <li><span class="footer-icon footer-whatsapp"></span> <i style="font-weight: 300">whatsapp</i> +92-302-736286</li>
                 </ul>
                 <h3>Official Social Media</h3>
                 <ul>
-                    <li><span class="footer-skype"></span> opticaldot</li>
-                    <li><span class="footer-facebook"></span> fb.com/opticaldot</li>
-                    <li><span class="footer-twitter"></span> @opticaldot</li>
+                    <li><span class="footer-icon footer-skype"></span> opticaldot</li>
+                    <li><span class="footer-icon footer-facebook"></span> fb.com/opticaldot</li>
+                    <li><span class="footer-icon footer-twitter"></span> @opticaldot</li>
                 </ul>
             </div>
 
             <form method="POST" action="<?=URL?>/contact">
             
-            <div class="footer-contact">
-                <div class="input-row">
-                    <div class="input-field">
-                        <input id="full_name" name="full_name" type="text" class="validate">
-                        <label for="full_name">Name</label>
+                <div class="footer-contact">
+                    <div class="input-row">
+                        <div class="input-field">
+                            <input id="full_name" name="full_name" type="text" class="validate">
+                            <label for="full_name">Name</label>
+                        </div>
+                    </div>
+        
+                    <div class="input-row">
+                        <div class="input-field">
+                            <input id="email" name="email" type="text" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+        
+                    <div class="input-row">
+                        <div class="input-field">
+                            <textarea name="message" id="writemessage" class="materialize-textarea"></textarea>
+                            <label for="writemessage">Write your message</label>
+                        </div>
+                    </div>
+        
+                    <div class="input-row">
+                        <input name="submit" type="submit" value="Send Message">
                     </div>
                 </div>
-    
-                <div class="input-row">
-                    <div class="input-field">
-                        <input id="email" name="email" type="text" class="validate">
-                        <label for="email">Email</label>
-                    </div>
-                </div>
-    
-                <div class="input-row">
-                    <div class="input-field">
-                        <select name="services[]" multiple id="selector">
-                            <option value="" disabled selected>Choose your option</option>
-                            <optgroup label="Brand">
-                                <option value="Brand Theme">Theme</option>
-                                <option value="Brand Viability Study">Viability Study</option>
-                                <option value="Brand Audience Specialization">Audience Specialization</option>
-                            </optgroup>
-
-                            <optgroup label="Design">
-                                <option value="Brand Graphics">Graphics</option>
-                                <option value="Brand Web Design">Web Design</option>
-                                <option value="Brand App Design">App Design</option>
-                            </optgroup>
-                        
-                            <optgroup label="Development">
-                                <option value="Web Development">Web Development</option>
-                                <option value="App Development">App Development</option>
-                                <option value="Desktop Development">Desktop Development</option>
-                                <option value="Hardware Development">Hardware Development</option>
-                            </optgroup>
-                        
-                            <optgroup label="Customization">
-                                <option value="CMS Modification">CMS Modification</option>
-                                <option value="Plugin Creation">Plugin Creation</option>
-                                <option value="Library Development">Library Development</option>
-                            </optgroup>
-                        
-                            <optgroup label="Optimization">
-                                <option value="Database Optimization">Database Optimization</option>
-                                <option value="SEO">Search Engine Development</option>
-                                <option value="Website Management">Website Management</option>
-                                <option value="Social Media Management">Social Media Management</option>
-                                <option value="Hardware Development">App Maintenance</option>
-                            </optgroup>
-                        
-                            <optgroup label="Marketing">
-                                <option value="Search Engine Marketing">Search Engine Marketing</option>
-                                <option value="Social Media Marketing">Social Media Targeted Marketing</option>
-                                <option value="Affiliate Advertising">Affiliate Advertising</option>
-                                <option value="Incentivized Marketing">Incentivized Traffic Marketing</option>
-                            </optgroup>
-                        </select>
-                        <label for="selector" class="cat-small">Category</label>
-                    </div>
-                </div>
-    
-                <div class="input-row">
-                    <div class="input-field">
-                        <textarea name="message" id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Write your message</label>
-                    </div>
-                </div>
-    
-                <div class="input-row">
-                    <input name="submit" type="submit" value="Send Message">
-                </div>
-            </div>
 
             </form>
         </div>
@@ -724,11 +555,11 @@
 
 
 <script>
-    document.querySelector("#textarea1").addEventListener('keydown', function (e) { 
-        var keycode1 = (e.keyCode ? e.keyCode : e.which); 
-        if (keycode1 == 32) 
+    document.querySelector("#writemessage").addEventListener('keydown', function (e) { 
+        var keycode1 = (e.keyCode ? e.keyCode : e.which);
+        console.log(keycode1);
+        if (keycode1 == 32 || keycode1 == 38) 
         { e.stopPropagation(); } 
-        
     })
     
 </script>
@@ -757,28 +588,16 @@
 
     if(window.innerWidth <= 650) {
         const companySec = document.getElementById('companyDiv');
-        const techSec = document.getElementById('techDiv');
 
         const companyRemain = companySec.children.company.children[1];
-        const techRemain = techSec.children.technology.children[1];
-        const techRemainTwo = techSec.children.technology.children[0].children[2];    
 
         let createASec = document.createElement('section');
         createASec.classList = 'scrollSection';
         createASec.appendChild(companyRemain);
         companySec.parentElement.insertBefore(createASec, companySec.nextSibling);
 
-        createASec = document.createElement('section');
-        createASec.classList = 'scrollSection';
-        createASec.appendChild(techRemain);
-        techSec.parentElement.insertBefore(createASec, techSec.nextSibling);
 
-        createASec = document.createElement('section');
-        createASec.classList = 'scrollSection';
-        createASec.appendChild(techRemainTwo);
-        techSec.parentElement.insertBefore(createASec, techSec.nextSibling);
-
-        nav = ['Top', 'OurTeam', 'Company', 'Technology', 'AI', 'Development', 'Web', 'Testimonials', 'Contact', 'Footer'];
+        nav = ['Top', 'OurTeam', 'Company', 'Development', 'Web', 'Testimonials', 'Contact', 'Footer'];
     }
 
 

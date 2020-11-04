@@ -4,7 +4,7 @@
     define('DB_NAME', "opticaldot_db");
     define('DB_USER', "root");
     define('DB_PASS', "");
-    define('URL', "http://localhost/opticaldot");
+    define('URL', "http://opticaldot.test");
     define('ENV', 'development');
     define('DEBUG_MODE', ENV === "development" ? true : false);
 

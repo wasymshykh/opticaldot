@@ -1,3 +1,23 @@
+@media (max-width: 1280px){
+
+    .social-nav {
+        flex-wrap: wrap;
+    }
+    .social-nav li {
+        flex-basis: 50%;
+        height: 30px;
+    }
+    .social-nav li:first-child,
+    .social-nav li:nth-child(2) {
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .social-nav li:nth-child(2) {
+        border-right: 1px solid #e0e0e0;
+    }
+
+}
+
+
 @media (max-width: 1024px){
 
     /* 
@@ -113,6 +133,10 @@
         position: relative;
         overflow: hidden;
     }
+    
+    .social-nav li:first-child, .social-nav li:nth-child(2) {
+        border-bottom: none;
+    }
 
     .navigation {
         z-index: 100;
@@ -147,6 +171,7 @@
         position: absolute;
         top: 18px;
         left: 4px;
+        pointer-events: none;
     }
 
     .close-btn .close-row:first-child {

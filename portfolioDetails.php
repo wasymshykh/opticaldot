@@ -9,92 +9,69 @@ FROM `portfolio` p
 WHERE p.id=:pid AND p.slug=:slug");
 $sam->execute(array(':pid' => $pid, ':slug' => $slug));
 
-if ($sam->rowCount() == 1) {
-    $portfolio = $sam->fetch();
-
-    $portfolio_id = $portfolio['id'];
-
-    $pictures = get_portfolio_pictures($portfolio_id);
-    $technologies = get_portfolio_technologies_joined($portfolio_id);
-    $features = get_portfolio_features_joined($portfolio_id);
-
-
-    $keywords = [];
-    foreach ($technologies as $x) {
-        $keywords[] = $x['name'];
-    }
-    foreach ($features as $x) {
-        $keywords[] = $x['name'];
-    }
-    $meta_keywords = implode(",", $keywords);
-    $pageTitle = $portfolio['title'];
-
-    require_once "header.php";
-
-    /*
-
-    switch($portfolio['typeName']){
-
-        case 'Web Designing':
-        $typeLink = 'webdesign.php';
-        break;
-
-        case 'Web Development':
-        $typeLink = 'webdevelopment.php';
-        break;
-
-        case 'Graphics Design':
-        $typeLink = 'graphicsdesign.php';
-        break;
-
-        case 'App Development':
-        $typeLink = 'appdevelopment.php';
-        break;
-
-    }
-    */
-
-
-
-    $pictureSlides = '';
-    if (!empty($pictures)) {
-        foreach ($pictures as $x) {
-            $pictureSlides .= '<li><a href="' . display_media($x['media_id']) . '" target="_blank"><img src="' . display_media($x['media_id']) . '"></a><div class="visit-overlay">Full Screenshot</div></li>';
-        }
-    }
-
-    $featureList = '';
-    if (!empty($features)) {
-        foreach ($features as $x) {
-            $featureList .= '
-            <li><img src="' . display_media($x['media_id']) . '" alt="' . $x['name'] . '" /> <span>' . $x['name'] . '</span></li>';
-        }
-    }
-
-    $backendTechnologyList = '';
-    $frontendTechnologyList = '';
-    if (!empty($technologies)) {
-        foreach ($technologies as $x) {
-            if ($x['type'] == 'backend') {
-
-                $backendTechnologyList .= '
-                <div class="tech-imgs-icon"><img src="' . display_media($x['media_id']) . '" class="tooltipped" data-tooltip="' . $x['name'] . '" alt="' . $x['name'] . '" /></div>';
-            } else {
-
-                $frontendTechnologyList .= '
-                <div class="tech-imgs-icon"><img src="' . display_media($x['media_id']) . '" class="tooltipped" data-tooltip="' . $x['name'] . '" alt="' . $x['name'] . '" /></div>';
-            }
-        }
-    }
-} else {
+if ($sam->rowCount() < 1) {
     header('location: /web-design-portfolio');
-    //echo display_alert("There exists no such project","danger");
 }
+
+$portfolio = $sam->fetch();
+
+$portfolio_id = $portfolio['id'];
+
+$pictures = get_portfolio_pictures($portfolio_id);
+$technologies = get_portfolio_technologies_joined($portfolio_id);
+$features = get_portfolio_features_joined($portfolio_id);
+
+
+$keywords = [];
+foreach ($technologies as $x) {
+    $keywords[] = $x['name'];
+}
+foreach ($features as $x) {
+    $keywords[] = $x['name'];
+}
+$meta_keywords = implode(",", $keywords);
+$pageTitle = $portfolio['title'];
+
+$pictureSlides = '';
+if (!empty($pictures)) {
+    foreach ($pictures as $x) {
+        $pictureSlides .= '<div class="item">
+            <img src="' . display_media($x['media_id']) . '">
+            <a href="' . display_media($x['media_id']) . '"  class="visit-overlay" target="_blank">Full Screenshot</a>
+            </div>';
+    }
+}
+
+$featureList = '';
+if (!empty($features)) {
+    foreach ($features as $x) {
+        $featureList .= '
+        <li><img src="' . display_media($x['media_id']) . '" alt="' . $x['name'] . '" /> <span>' . $x['name'] . '</span></li>';
+    }
+}
+
+$backendTechnologyList = '';
+$frontendTechnologyList = '';
+if (!empty($technologies)) {
+    foreach ($technologies as $x) {
+        if ($x['type'] == 'backend') {
+            $backendTechnologyList .= '
+            <div class="tech-imgs-icon"><img src="' . display_media($x['media_id']) . '" class="tooltipped" data-tooltip="' . $x['name'] . '" alt="' . $x['name'] . '" /></div>';
+        } else {
+            $frontendTechnologyList .= '
+            <div class="tech-imgs-icon"><img src="' . display_media($x['media_id']) . '" class="tooltipped" data-tooltip="' . $x['name'] . '" alt="' . $x['name'] . '" /></div>';
+        }
+    }
+}
+
+require_once "header.php";
 
 ?>
 
+<link rel="stylesheet" type="text/css" href="<?= $site_url ?>/css/owl.carousel.min.css">
+<link rel="stylesheet" type="text/css" href="<?= $site_url ?>/css/owl.theme.default.min.css">
+<link rel="stylesheet" href="<?= $site_url ?>/css/animate.css" />
 <link rel="stylesheet" type="text/css" href="<?= $site_url ?>/css/webdevportfolio.css">
-
 
 <section>
 
@@ -105,6 +82,19 @@ if ($sam->rowCount() == 1) {
 
             <div class="webDevShot-top">
                 <div class="webDevShot-slider">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="<?php echo display_media($portfolio['cover']); ?>">
+                        
+                            <a href="<?php echo display_media($portfolio['cover']); ?>" class="visit-overlay" target="_blank">
+                                Full Screenshot
+                            </a>
+                        </div>
+                        <?php echo $pictureSlides; ?>
+                    </div>
+                </div>
+
+                <!-- <div class="webDevShot-slider">
                     <div class="slider">
                         <ul class="slides">
                             <li><a href="<?php echo display_media($portfolio['cover']); ?>" target="_blank"><img src="<?php echo display_media($portfolio['cover']); ?>"></a>
@@ -113,7 +103,7 @@ if ($sam->rowCount() == 1) {
                             <?php echo $pictureSlides; ?>
                         </ul>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="webDevShot-work">
                     <div class="shotWork-title">
@@ -170,7 +160,20 @@ if ($sam->rowCount() == 1) {
 
 </section>
 
+<script src="<?=URL?>/js/jquery-3.5.1.min.js"></script>
+<script src="<?=URL?>/js/owl.carousel.min.js"></script>
 
+<script>
+    $('.webDevShot-slider .owl-carousel').owlCarousel({
+        animateOut: 'slideOutDown',
+        animateIn: 'flipInX',
+        nav:true,
+        items:1,
+        margin:30,
+        stagePadding:50,
+        smartSpeed:450
+    });
+</script>
 <?php
 
 require_once "footer.php";

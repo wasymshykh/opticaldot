@@ -180,100 +180,50 @@ if (isset($_POST['submit'])) {
 
             </div>
 
-            <form method="POST" action="/contact.php">
-                <div class="contact-form">
+            <form method="POST" action="/contact.php" class="contact-form">
                     
-                    <div class="row">
-                        <form class="col s10 offset-s1">
+                <div class="row">
+                    <form class="col s10 offset-s1">
 
-                            <?php if ($error["error"]) : ?>
-                                <div class="row">
-                                    <div class="col s12">
-                                        <div class="card-panel red white-text" style="padding: 14px;font-size: 0.8rem;">
-                                            <?= $error["message"]; ?>
-                                        </div>
+                        <?php if ($error["error"]) : ?>
+                            <div class="row">
+                                <div class="col s12">
+                                    <div class="card-panel red white-text" style="padding: 14px;font-size: 0.8rem;">
+                                        <?= $error["message"]; ?>
                                     </div>
                                 </div>
-                            <?php endif; ?>
-
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="full_name" type="text" name="full_name" class="validate <?= ($error["error"] && $error["error_type"] == "name") ? "invalid" : "" ?>" <?= ($error["error"]) ? 'value="' . $_POST["full_name"] . '"' : "" ?>>
-                                    <label for="full_name">Your Name</label>
-                                </div>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="email" type="email" name="email" class="validate <?= ($error["error"] && $error["error_type"] == "email") ? "invalid" : "" ?>" <?= ($error["error"]) ? 'value="' . $_POST["email"] . '"' : "" ?>>
-                                    <label for="email">Email</label>
-                                </div>
+                        <?php endif; ?>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="full_name" type="text" name="full_name" class="validate <?= ($error["error"] && $error["error_type"] == "name") ? "invalid" : "" ?>" <?= ($error["error"]) ? 'value="' . $_POST["full_name"] . '"' : "" ?>>
+                                <label for="full_name">Your Name</label>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <select name="services[]" multiple id="selector">
-                                        <option value="" disabled selected>Choose your option</option>
-                                        <optgroup label="Brand">
-                                            <option value="Brand Theme">Theme</option>
-                                            <option value="Brand Viability Study">Viability Study</option>
-                                            <option value="Brand Audience Specialization">Audience Specialization</option>
-                                        </optgroup>
-
-                                        <optgroup label="Design">
-                                            <option value="Brand Graphics">Graphics</option>
-                                            <option value="Brand Web Design">Web Design</option>
-                                            <option value="Brand App Design">App Design</option>
-                                        </optgroup>
-
-                                        <optgroup label="Development">
-                                            <option value="Web Development">Web Development</option>
-                                            <option value="App Development">App Development</option>
-                                            <option value="Desktop Development">Desktop Development</option>
-                                            <option value="Hardware Development">Hardware Development</option>
-                                        </optgroup>
-
-                                        <optgroup label="Customization">
-                                            <option value="CMS Modification">CMS Modification</option>
-                                            <option value="Plugin Creation">Plugin Creation</option>
-                                            <option value="Library Development">Library Development</option>
-                                        </optgroup>
-
-                                        <optgroup label="Optimization">
-                                            <option value="Database Optimization">Database Optimization</option>
-                                            <option value="SEO">Search Engine Development</option>
-                                            <option value="Website Management">Website Management</option>
-                                            <option value="Social Media Management">Social Media Management</option>
-                                            <option value="Hardware Development">App Maintenance</option>
-                                        </optgroup>
-
-                                        <optgroup label="Marketing">
-                                            <option value="Search Engine Marketing">Search Engine Marketing</option>
-                                            <option value="Social Media Marketing">Social Media Targeted Marketing</option>
-                                            <option value="Affiliate Advertising">Affiliate Advertising</option>
-                                            <option value="Incentivized Marketing">Incentivized Traffic Marketing</option>
-                                        </optgroup>
-                                    </select>
-                                    <label for="selector" class="cat-small">Category</label>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" type="email" name="email" class="validate <?= ($error["error"] && $error["error_type"] == "email") ? "invalid" : "" ?>" <?= ($error["error"]) ? 'value="' . $_POST["email"] . '"' : "" ?>>
+                                <label for="email">Email</label>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="textarea1" name="message" class="materialize-textarea <?= ($error["error"] && $error["error_type"] == "message") ? "invalid" : "" ?>"><?= ($error["error"]) ? $_POST["message"] : "" ?></textarea>
-                                    <label for="textarea1">Your Message</label>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" name="message" class="materialize-textarea <?= ($error["error"] && $error["error_type"] == "message") ? "invalid" : "" ?>"><?= ($error["error"]) ? $_POST["message"] : "" ?></textarea>
+                                <label for="textarea1">Your Message</label>
                             </div>
-                            <div class="row">
-                                <div class="col s12">
-                                    <div class="g-recaptcha" data-sitekey="6LdH3q8UAAAAAOstcc4hPcXVkApqs_22QE2jbujE"></div>
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="g-recaptcha" data-sitekey="6LdH3q8UAAAAAOstcc4hPcXVkApqs_22QE2jbujE"></div>
                             </div>
-                            <div class="row">
-                                <div class="col s12">
-                                    <input type="submit" name="submit" value="Submit" class="contact-submit">
-                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <input type="submit" name="submit" value="Submit" class="contact-submit">
                             </div>
-                        </form>
-                    </div>
-
+                        </div>
+                    </form>
                 </div>
 
             </form>

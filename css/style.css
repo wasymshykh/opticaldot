@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -538,7 +539,6 @@ header #header {
 	height: 60vh;
 	display: block;
 	position: relative;
-	background: linear-gradient(-90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1)), url(../images/footerbg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -603,10 +603,10 @@ header #header {
     margin: 1vh 0;
 }
 
-.footer-qoute ul li span {
-	background-size: 50% 50%;
+.footer-qoute ul li span.footer-icon {
+	background-size: 60% 60%;
 	background-position: center center;
-	border: 1px solid #000000;
+	border: 2px solid #000000;
 	border-radius: 50%;
     width: calc(1.2vh + 1.2vw);
     height: calc(1.2vh + 1.2vw);
@@ -619,7 +619,7 @@ header #header {
 .footer-email {
 	background: url(../images/icons/email.svg) no-repeat;
 }
-.footer-phone {
+.footer-whatsapp {
 	background: url(../images/icons/phone.svg) no-repeat;
 }
 .footer-skype {
@@ -635,8 +635,8 @@ header #header {
 .footer-contact {
 	position: absolute;
 	width: 30vw;
-	height: 60vh;
-	min-height: 380px;
+	padding-bottom: 3vh;
+	min-height: 300px;
 	background: #FFF;
 	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
 	right: 10vw;
@@ -834,8 +834,6 @@ header #header {
 .footer-industries ul li span {
 	background-size: 100% 100%;
 	background-position: center center;
-	/* border: 1px solid #fff; */
-	/* border-radius: 50%; */
     width: calc(.8vh + .8vw);
     height: calc(.8vh + .8vw);
     position: absolute;
