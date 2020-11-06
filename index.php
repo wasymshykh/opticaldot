@@ -469,6 +469,8 @@
 	</div>
 </section>
 
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <footer class="scrollSection" id="footerDiv">
     <div id="footer">
 
@@ -509,6 +511,12 @@
                         <div class="input-field">
                             <textarea name="message" id="writemessage" class="materialize-textarea"></textarea>
                             <label for="writemessage">Write your message</label>
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="col s12">
+                            <div class="g-recaptcha" data-sitekey="6LdH3q8UAAAAAOstcc4hPcXVkApqs_22QE2jbujE"></div>
                         </div>
                     </div>
         

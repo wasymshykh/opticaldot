@@ -3,27 +3,26 @@
 
             <?php if(!isset($NoFooterContactForm)){ ?>
 
-            
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
             <div class="footer-top">
                 <div class="footer-qoute">
                     <h1>Request a <span>Quote</span></h1>
-                    
+                    <p></p>
                     <ul>
-                        <li><span class="footer-email"></span> support@opticaldot.com</li>
-                        <li><span class="footer-phone"></span> +92-302-736286</li>
+                        <li><span class="footer-icon footer-email"></span> opticaldotofficial@gmail.com</li>
+                        <li><span class="footer-icon footer-whatsapp"></span> <i style="font-weight: 300">whatsapp</i> +92-302-736286</li>
                     </ul>
                     <h3>Official Social Media</h3>
                     <ul>
-                        <li><span class="footer-skype"></span> opticaldot</li>
-                        <li><span class="footer-facebook"></span> fb.com/opticaldot</li>
-                        <li><span class="footer-twitter"></span> @opticaldot</li>
+                        <li><span class="footer-icon footer-skype"></span> opticaldot</li>
+                        <li><span class="footer-icon footer-facebook"></span> fb.com/opticaldot</li>
+                        <li><span class="footer-icon footer-twitter"></span> @opticaldot</li>
                     </ul>
                 </div>
 
-                <form method="POST" action="/contact.php">
+                <form method="POST" action="/contact" class="footer-contact">
                 
-                <div class="footer-contact">
                     <div class="input-row">
                         <div class="input-field">
                             <input id="full_name" type="text" name="full_name" class="validate">
@@ -44,11 +43,16 @@
                             <label for="textarea1">Write your message</label>
                         </div>
                     </div>
+
+                    <div class="input-row">
+                        <div class="col s12">
+                            <div class="g-recaptcha" data-sitekey="6LdH3q8UAAAAAOstcc4hPcXVkApqs_22QE2jbujE"></div>
+                        </div>
+                    </div>
         
                     <div class="input-row">
                         <input type="submit" name="submit" value="Send Message">
                     </div>
-                </div>
 
                 </form>
 

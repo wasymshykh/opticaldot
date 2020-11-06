@@ -1,4 +1,5 @@
 <?php 
+require_once "config.php";
 
 $pageTitle = 'Customization Services';
 

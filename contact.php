@@ -57,9 +57,6 @@ if (isset($_POST['submit'])) {
     if (empty($email) || strlen($email) < 3 || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = ["error" => true, "error_type" => "email", "message" => "Kindly enter valid email address."];
     } else
-    if (!is_array($services) || count($services) < 1) {
-        $error = ["error" => true, "error_type" => "services", "message" => "Kindly select atleast one category"];
-    } else
     if (empty($message) || strlen($message) < 15) {
         $error = ["error" => true, "error_type" => "message", "message" => "Kindly enter valid message. Must be minimum 10 words."];
     }
@@ -82,35 +79,11 @@ if (isset($_POST['submit'])) {
             $mail->Username = $sender_email;
             $mail->Password = 'contactOD@1947';
 
-            $mailSubjectGenerated = '';
-            $firstWords = array();
-
-            if (isset($services) && is_array($services)) {
-                $servicesList = 'Services Requested: ';
-                $size = sizeof($services);
-                for ($i = 0; $i < $size; $i++) {
-                    $servicesList .= $services[$i] . iif($i == ($size - 1), '', ', ');
-                    $firstWords[$i] = explode(' ', $services[$i])[0];
-                }
-                $servicesList .= '<br><br>';
-                $firstWords = array_values(array_unique($firstWords));
-            }
-
-            if (!empty($firstWords)) {
-                if (sizeof($firstWords) > 3) {
-                    $mailSubjectGenerated .= $firstWords[0] . ", " . $firstWords[1] . " & Other ";
-                } else {
-                    $mailSubjectGenerated .= implode(', ', $firstWords) . " ";
-                }
-            }
-
-            $mailSubjectGenerated .= 'Services from Optical Dot';
-
             //Content
             $mail->AddReplyTo($email, $name);
             $mail->SetFrom($sender_email, $name);
-            $mail->Subject = $mailSubjectGenerated;
-            $mail->Body = $servicesList . $message;
+            $mail->Subject = "OpticalDot customer support request";
+            $mail->Body = $message;
             $mail->AddAddress($to);
 
             $mail->send();
@@ -180,7 +153,7 @@ if (isset($_POST['submit'])) {
 
             </div>
 
-            <form method="POST" action="/contact.php" class="contact-form">
+            <form method="POST" action="/contact" class="contact-form">
                     
                 <div class="row">
                     <form class="col s10 offset-s1">
@@ -234,8 +207,4 @@ if (isset($_POST['submit'])) {
 
 
 
-<?php
-
-require_once "footer.php";
-
-?>
+<?php require_once "footer.php"; ?>

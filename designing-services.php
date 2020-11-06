@@ -1,5 +1,5 @@
 <?php 
-
+require_once "config.php";
 $pageTitle = 'Designing Services';
 
 //require_once "includes.php";

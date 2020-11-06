@@ -59,18 +59,17 @@
     ?>
     
     
-    
-    <link rel="apple-touch-icon" sizes="76x76" href="<?=URL?>/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?=URL?>/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?=URL?>/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<?=URL?>/favicon-16x16.png">
     <link rel="manifest" href="<?=URL?>/site.webmanifest">
-    <link rel="mask-icon" href="<?=URL?>/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <link rel="mask-icon" href="<?=URL?>/safari-pinned-tab.svg" color="#6d1b4a">
+    <meta name="msapplication-TileColor" content="#6d1b4a">
     <meta name="theme-color" content="#ffffff">
 	
+	<link href="https://fonts.googleapis.com/css?family=Lato:900,700,400,300" rel="stylesheet" type="text/css">
 
 	<link rel="stylesheet" type="text/css" href="<?=URL?>/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?=URL?>/css/style.css">
     
-	<link href="https://fonts.googleapis.com/css?family=Lato:900,700,400,300" rel="stylesheet" type="text/css">

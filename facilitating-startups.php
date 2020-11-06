@@ -1,5 +1,5 @@
 <?php 
-
+require_once "config.php";
 $pageTitle = 'Services for Startups';
 
 require_once "header.php";
@@ -70,7 +70,7 @@ require_once "header.php";
                         </p>
                         
                         <div class="startups-t-btns">
-                            <p><span>Check details about our</span> <a href="/development.php">Development Services <i class="material-icons">arrow_forward</i></a></p>
+                            <p><span>Check details about our</span> <a href="/development-services">Development Services <i class="material-icons">arrow_forward</i></a></p>
                         </div>
                     </div>
                     <div class="startups-t-points">
@@ -146,7 +146,7 @@ require_once "header.php";
                                 Quality is our promise!</p>
                         
                         <div class="startups-t-btns">
-                            <p><span>Learn more about our</span> <a href="/ai.php">AI Services <i class="material-icons">arrow_forward</i></a></p>
+                            <p><span>Learn more about our</span> <a href="/artificial-intelligence">AI Services <i class="material-icons">arrow_forward</i></a></p>
                         </div>
                     </div>
                 </div>

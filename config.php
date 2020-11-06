@@ -9,5 +9,3 @@
     define('DEBUG_MODE', ENV === "development" ? true : false);
 
     define('HOUR_DIFFERENCE_DB', 3); // Ideally should be 0
-
-?>

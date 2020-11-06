@@ -14,4 +14,3 @@ require_once "admin/functions.php";
 
 //$permission = $loginStatus = checkLoginStatusUser();
 
-?>

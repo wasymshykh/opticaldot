@@ -80,6 +80,7 @@
     height: auto;
     flex-basis: 50%;
     padding: 5vh 0;
+    float: none;
 }
 
 .footer-qoute h1 {
@@ -101,20 +102,21 @@
     padding-left: 2rem;
     margin: 1rem 0;
 }
-.footer-qoute ul li span {
+.footer-qoute ul li span.footer-icon {
     width: 1.5rem;
     height: 1.5rem;
     background-size: 60% 60%;
 }
-
+.footer-top {
+    padding: 2em 0
+}
 .footer-contact {
     flex: 1;
     width: 50%;
-    height: auto;
     padding-bottom: 2em;
     right: 0;
-    top: unset;
-    top: 10%;
+    position: relative;
+    top: 0;
 }
 
 .footer-contact .input-row:not(:last-child) {
